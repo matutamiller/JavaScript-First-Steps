@@ -1,0 +1,30 @@
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>JavaScript Study</title>
+  </head>
+  <body>
+  
+  	<h3>Write a JavaScript program to check from two given integers, if one is positive and one is negative. </h3>
+     <form>
+      1st Number: <input type="text" id="firstNumber2" /><br>
+      2nd Number: <input type="text" id="secondNumber2" /><br>
+      <input type="button" onClick="posNeg()" value="Compare and Check" />
+    </form>
+      <p>The Result is: <br>
+        <span id="result5"></span> 
+      </p> 
+
+    <script>
+     function posNeg(){
+      num1 = parseInt(document.getElementById("firstNumber2").value);
+      num2 = parseInt(document.getElementById("secondNumber2").value);
+        if (num1 < 0 && num2 > 0 || num1 > 0 && num2 < 0){
+          document.getElementById("result5").innerHTML = true;
+          } else{
+           document.getElementById("result5").innerHTML = false;
+        }	
+     } 
+    </script>
+  </body>
+</html>
