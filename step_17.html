@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>JavaScript Study</title>
+  </head>
+    <body>
+    
+    <h3> Write a JavaScript program to remove a character at the specified position of a given string and return the new string. </h3>
+      <form>
+        Your String: <input type="text" id="string1" /><br>
+        Cut this: <input type="text" id="cut" /><br>
+        <input type="button" onClick="minus()" value="Create a string" />
+      </form>
+        <p>The Result is: <br>
+          <span id="result1"></span> 
+        </p>
+
+       <script>
+          function minus (str, cut){
+            var str = document.getElementById("string1").value;
+            var cut = parseInt(document.getElementById("cut").value) - 1;
+            part1 = str.substring(0, cut);
+            part2 = str.substring(cut + 1, str.length);
+              document.getElementById("result1").innerHTML = part1 + part2; 
+          }
+        </script>
+    </body>
+</html>
