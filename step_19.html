@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>JavaScript Study</title>
+  </head>
+    <body>
+    
+      <h3>Write a JavaScript program to create a new string from a given string with the first character of the given string added at the front and back.</h3>
+        <form>
+          Your String: <input type="text" id="stringadd" /><br>
+           <input type="button" onClick="plusone()" value="Add Letters" />
+        </form>
+          <p>The Result is: <br>
+            <span id="result3"></span> 
+          </p>
+          
+      <script>
+        function plusone (){
+          var str = document.getElementById("stringadd").value;
+          var first = str.substring (0, 1);
+          document.getElementById("result3").innerHTML = first + str + first;
+        }
+      </script>     
+  </body>
+</html>
