@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>JavaScript Study</title>
+  </head>
+    <body>
+
+      <h3>Write a JavaScript program to create a new string from a given string taking the last 3 characters 
+      and added at both the front and back. The string length must be 3 or more.</h3>
+          <form>
+            Your String: <input type="text" id="string" /><br>
+            <input type="button" onClick="reverse()" value="Create new string" />
+          </form>
+            <p>The Result is: <br>
+              <span id="result"></span> 
+            </p>
+            
+  	<script>
+      function reverse() {
+        var str = document.getElementById("string").value;
+        if (str.length >= 3){
+          str_len = 3;
+          back = str.substring(str.length - 3);
+          document.getElementById("result").innerHTML = back + str + back;
+          } else {
+          document.getElementById("result").innerHTML = "Fuck You!"
+        }
+      }
+    </script>
+  </body>
+</html>
