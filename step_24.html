@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>JavaScript Study</title>
+  </head>
+    <body>
+  
+      <h3>Write a JavaScript program to find the largest of three given integers.</h3>
+        <form>
+          1st Number: <input type="text" id="firstNumber1" /><br>
+          2nd Number: <input type="text" id="secondNumber1" /><br>
+          3rd Number: <input type="text" id="thirdNumber1" /><br>
+          <input type="button" onClick="checkMax()" value="Maximal is" />
+        </form>
+          <p>The Result is: <br>
+            <span id="result3"></span> 
+          </p>
+          
+  	  <script>
+        function checkMax(){
+          var num1 = parseInt(document.getElementById("firstNumber1").value);
+          var num2 = parseInt(document.getElementById("secondNumber1").value);
+          var num3 = parseInt(document.getElementById("thirdNumber1").value);
+          var max_val = 0;
+          if (num1 > num2) {
+            max_val = num1;
+          } else {
+            max_val = num2;
+          }
+          if (num3 > max_val) {
+                max_val = num3;
+          }
+          document.getElementById("result3").innerHTML = max_val;
+        }
+   </script>
+  </body>
+</html>
