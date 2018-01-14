@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>JavaScript Study</title>
+  </head>
+  <body>
+  
+  <h3>Write a JavaScript program to check how many specified characters a given string contains. </h3>
+    <form>
+      String: <input type="text" id="string" /><br>
+      A letter to check: <input type="text" id="letter" /><br>
+      <input type="button" onClick="checkString()" value="Symbols q-ty" />
+    </form>
+      <p>The Result is: <br>
+        <span id="result"></span> 
+      </p>
+      
+      <script>
+        function checkString() {
+          var str = document.getElementById("string").value;
+          var letter = document.getElementById("letter").value;
+          var repetition = 0;
+          for (var i = 0; i < str.length; i++){
+            if (str.charAt(i) == letter){
+              repetition++;
+              }
+          }
+          document.getElementById("result").innerHTML = repetition;
+        }
+      </script>
+    </body>
+  </html>  
