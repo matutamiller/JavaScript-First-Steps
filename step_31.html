@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>JavaScript Study</title>
+  </head>
+  <body>
+    <h3>
+      Write a JavaScript program to check the total marks of a student in various examinations. 
+      The student will get A+ grade if the total marks are in the range 89..100 inclusive, if the examination is "Final-exam." 
+      The student will get A+ grade where total marks must be greater than or equal to 90. 
+      Return true if the student get A+ grade or false otherwise.
+    </h3>
+      <form>
+        Examination marks: <input type="text" id="exams" /><br>
+        Final Exam: <input type="text" id="finalexam" /><br>
+        <input type="button" onClick="checkMarks()" value="Check the mark" />
+      </form>
+        <p>The Result is: <br>
+          <span id="result"></span> 
+        </p>
+        
+       <script>
+       function checkMarks() {
+        var mark1 = document.getElementById("exams").value;
+        var mark2 = document.getElementById("finalexam").value;
+        if ((mark1 >=89 && mark1 <=100) && (mark2 >=90 && mark2 <= 100)) {
+          document.getElementById("result").innerHTML = "A+";
+          } else {
+          document.getElementById("result").innerHTML ="You should work harder!";
+          }
+       }  
+       </script>
+  </body>
+</html>
