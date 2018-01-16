@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>JavaScript Study</title>
+  </head>
+  <body>
+    <h3> Write a JavaScript program to check from three given numbers 
+    (non negative integers) that two or all of them have the same rightmost digit.</h3>
+      <form>
+      1st Number: <input type="text" id="number1" /><br>
+      2nd Number: <input type="text" id="number2" /><br>
+      3rd Number: <input type="text" id="number3" /><br>
+      <input type="button" onClick="checkLast()" value="Check last digits" />
+      </form>
+        <p>The Result is: <br>
+           <span id="result"></span> 
+        </p>
+    
+    <script>
+      function checkLast(){
+        var num1 = document.getElementById("number1").value;
+        var num2 = document.getElementById("number2").value;
+        var num3 = document.getElementById("number3").value;
+        if (num1 > 0 && num2 > 0 && num3 > 0){
+            var a = num1.toString().slice(-1);
+            var b = num2.toString().slice(-1);
+            var c = num3.toString().slice(-1);
+            document.getElementById("result").innerHTML = a===b || b===c || c===a;
+        } else {
+          document.getElementById("result").innerHTML = "Not equal";
+        }
+      }
+   </script>
+  </body>
+</html>
