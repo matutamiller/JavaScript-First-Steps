@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>JavaScript Study</title>
+  </head>
+  <body>
+    <h3>Write a JavaScript program to check two given non-negative integers 
+    and if one of the number (not both) is multiple of 7 or 11.</h3>
+      <form>
+      1st Number: <input type="text" id="firstNumber" /><br>
+      2nd Number: <input type="text" id="secondNumber" /><br>
+      <input type="button" onClick="checkNum()" value="Check numbers" />
+        </form>
+        <p>The Result is: <br>
+        <span id="result"></span> 
+        </p>
+        
+        <script>
+          function checkNum() {
+            var x = document.getElementById("firstNumber").value;
+            var y = document.getElementById("secondNumber").value;
+            if (x > 0 && y > 0) {
+              document.getElementById("result").innerHTML = (((x % 7 == 0) || (x % 11 == 0)) &&
+              ((y % 7 !== 0) || (y % 11 !== 0))) || (((y % 7 == 0) || (y % 11 == 0)) &&
+              ((x % 7 !== 0) || (x % 11 !== 0)));
+            } else {
+                 document.getElementById("result").innerHTML = "no";
+            } 
+          }
+        </script>
+    </body>
+ </html>    
