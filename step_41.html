@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>JavaScript Study</title>
+  </head>
+  <body>
+    <h3>Write a JavaScript program to convert the letters of a given string in alphabetical order.</h3>
+      <form>
+          Your String: <input type="text" id="string" /><br>
+          <input type="button" onClick="alphOrder()" value="Sort Alphabetically" />
+       </form>  
+        <p>The Result is: <br>
+          <span id="result"></span> 
+         </p>
+         
+      <script>
+        function alphOrder(){
+          var str = document.getElementById("string").value;
+          document.getElementById("result").innerHTML = str.split("").sort().join("");
+        }
+      </script>
+   </body>
+ </html>  
