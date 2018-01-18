@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>JavaScript Study</title>
+  </head>
+  <body>
+    <h3>Write a JavaScript program to capitalize the first letter of each word of a given string.</h3> 
+      String: <input type="text" id="lowstring" /><br>
+      <input type="button" onClick="lowUpper()" value="Capitalize" />
+      </form>
+        <p>The Result is: <br>
+        <span id="result"></span> 
+        </p>
+        
+     <script>
+       function lowUpper(){
+          var word = document.getElementById("lowstring").value;
+          var str = word.split(" ");
+          for (var i = 0; x = str.length, i < x; i++){
+            str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+          }
+          document.getElementById("result").innerHTML = str.join(" ");
+        }
+      </script>  
+    </body>
+ </html> 
+  
