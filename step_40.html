@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>JavaScript Study</title>
+  </head>
+  <body>
+
+    <h3>Write a JavaScript program to convert a given number to hours and minutes.</h3>
+     <form>
+        Your Number: <input type="text" id="number" /><br>
+        <input type="button" onClick="showTime()" value="Show Time" />
+     </form>
+      <p>The Result is: <br>
+        <span id="result"></span> 
+       </p>
+       
+    <script>
+      function showTime() {
+        var num = document.getElementById("number").value;
+        var hour = Math.floor(num/60);
+        var min = num % 60;
+        if (hour < 10){
+          hour = "0"+hour;
+        }
+        if(min < 10) {
+          min = "0"+min;
+        }
+          document.getElementById("result").innerHTML = hour +":" + min;
+      }
+    </script>
+  </body>
+</html>  
+      
+    
