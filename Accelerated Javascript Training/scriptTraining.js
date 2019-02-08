@@ -1,3 +1,5 @@
-"use strict";
+
 var var1 = 5;
-console.log(var1);
+console.log(typeof var1);
+var var1 = '10';
+console.log(typeof var1);
