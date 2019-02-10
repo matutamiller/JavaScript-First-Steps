@@ -1,5 +1,5 @@
-var condition = false;
-var anotherCondition = true;
+var condition = null;
+var anotherCondition = false;
 
 if (condition) {
     console.log('Executed!');
@@ -8,3 +8,4 @@ if (condition) {
 } else {
     console.log('Not Executed!');
 }
+
