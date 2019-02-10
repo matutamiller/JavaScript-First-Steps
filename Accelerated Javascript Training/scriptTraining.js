@@ -1,3 +1,8 @@
-var1 = 5;
-console.log(var1);
-var var1;
+var calc = function () {
+    console.log('Inside function!');
+};
+
+console.log(typeof calc);
+
+var anotherFn = calc();
+console.log(anotherFn);
