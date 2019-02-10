@@ -1,8 +1,7 @@
-var calc = function () {
-    console.log('Inside function!');
+var calc = function (number1 , number2) {
+    return number1 + number2;
 };
 
-console.log(typeof calc);
 
-var anotherFn = calc();
-console.log(anotherFn);
+var calculator = calc;
+console.log(calculator(15, 2));
