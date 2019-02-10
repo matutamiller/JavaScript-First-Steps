@@ -1,7 +1,10 @@
-var calc = function (number1 , number2) {
-    return number1 + number2;
-};
+var condition = false;
+var anotherCondition = true;
 
-
-var calculator = calc;
-console.log(calculator(15, 2));
+if (condition) {
+    console.log('Executed!');
+} else if (anotherCondition) {
+    console.log('Still Executed!');
+} else {
+    console.log('Not Executed!');
+}
