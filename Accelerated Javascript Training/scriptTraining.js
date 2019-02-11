@@ -1,11 +1,13 @@
-var condition = null;
-var anotherCondition = false;
+var luckyNumber = 8;
 
-if (condition) {
-    console.log('Executed!');
-} else if (anotherCondition) {
-    console.log('Still Executed!');
-} else {
-    console.log('Not Executed!');
+switch (luckyNumber) {
+    case 1: 
+        console.log('Is 1');
+        break;
+    case 8:
+        console.log('Is 8');
+        break; 
+    default:
+        console.log('Default'); 
+        break;    
 }
-
