@@ -1,9 +1,3 @@
-for (var i = 0; i < 5; i++) {
-    for (var j = 0; j < 2; j++) {
-        if(i == 1) {
-            break;
-        }
-        console.log('Inside inner loop, j = ' + j)
-    }    
+for (var i = 2; i > 1; i--) {   
     console.log(i);
 }
