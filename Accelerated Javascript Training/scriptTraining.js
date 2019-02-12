@@ -1,3 +1,4 @@
-for (var i = 2; i > 1; i--) {   
-    console.log(i);
+var array = [1, 2, 3];
+for (var i = 0; i < array.length; i++) {   
+    console.log(array[i]);
 }
