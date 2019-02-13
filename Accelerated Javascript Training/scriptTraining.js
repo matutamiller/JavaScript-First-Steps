@@ -1,4 +1,15 @@
-var array = [1, 2, 3];
-for (var i = 0; i < array.length; i++) {   
-    console.log(array[i]);
+var condition = true;
+var i = 2;
+
+while (condition) {
+    if (i == 3) {
+        condition = false;
+    }
+    console.log(i);
+    i++;
+};
+
+do {
+    console.log('Executed');
 }
+while (condition);
