@@ -1,15 +1,9 @@
-var condition = true;
-var i = 2;
+var a = [1, 2];
+var b = " join";
 
-while (condition) {
-    if (i == 3) {
-        condition = false;
-    }
-    console.log(i);
-    i++;
-};
+console.log(a + b);
 
-do {
-    console.log('Executed');
-}
-while (condition);
+var c = 12;
+var d = undefined;
+
+console.log(c + d);
