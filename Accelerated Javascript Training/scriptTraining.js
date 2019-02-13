@@ -1,9 +1,9 @@
-var a = [1, 2];
-var b = " join";
+var a = "Split us";
+var b = "us";
 
-console.log(a + b);
+console.log(a - b);
 
 var c = 12;
-var d = undefined;
+var d = '1';
 
-console.log(c + d);
+console.log(c - d);
