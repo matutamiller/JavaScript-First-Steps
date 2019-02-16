@@ -1,21 +1,15 @@
-var a = 12;
-var b = 2;
+var a = 3.3;
+var b = 2.2;
+console.log((a / b).toFixed(2));
 
-a *= b;
-console.log(a);
+var a = 10;
+var b = 3;
+console.log(a % b);
 
-var c = 1.3;
-var d = 2.2;
+var a = 10;
+var b = 0;
+console.log(a / b);
 
-console.log(c * d);
-
-if ((c * d).toFixed(2) == 2.86) {
-    console.log('true');
-} else {
-    console.log('false');
-}
-
-var e = 2;
-var f = null;
-
-console.log(e * f);
+var a = 10;
+var b = Infinity;
+console.log(a / b);
