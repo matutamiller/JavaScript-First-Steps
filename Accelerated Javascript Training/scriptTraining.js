@@ -1,4 +1,4 @@
 var a = 5;
-var b = 5;
+var b = 6;
 
 console.log(a == b ? 'Equal!' : 'Not equal!');
