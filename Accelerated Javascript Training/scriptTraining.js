@@ -1,4 +1,5 @@
-var a = 5;
-var b = 6;
+var a  = 5;
+var b = a;
 
-console.log((a + b) * 2);
+var a = {a: 5};
+var b = a;
