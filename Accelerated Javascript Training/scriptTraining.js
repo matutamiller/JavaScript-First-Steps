@@ -1,9 +1,6 @@
-var test = 'Global scope';
+var array = [1, 2, 3];
+console.log(array.length);
+array[1] = 100;
+array[5] = 100;
 
-function localScope() {
-    var test = 'Local scope'
-    console.log(test);
-}
-
-localScope();
-console.log(test);
+console.log(array);
