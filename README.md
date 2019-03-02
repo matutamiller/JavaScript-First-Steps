@@ -8,3 +8,6 @@ Finished 'JS Basics' section.
 Proceeded to 'Types and Scope' section.
 
 Finished 'Types and Scopes' section.
+
+Started 'Arrays' section.
+
