@@ -1,5 +1,20 @@
-var array = [1, 2, 3];
+var array = [1, 2, 3,,];
 
-array.forErach(function(element) {
-    console.log(element);
-});
+array.push(4);
+console.log(array);
+
+var array = [1, 2, 3, 4];
+
+array.pop();
+console.log((array.pop));
+console.log(array);
+
+var array = [1, 2, 3, 4];
+
+array.shift();
+console.log(array);
+
+var array = [1, 2, 3, 4];
+
+array.unshift();
+console.log(array);
