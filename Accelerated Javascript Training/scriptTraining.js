@@ -16,5 +16,13 @@ console.log(array);
 
 var array = [1, 2, 3, 4];
 
-array.unshift();
+array.unshift('new');
+console.log(array.indexOf('new'));
+
+var newArray = array.splice(2, 2);
+console.log(newArray);
+console.log(array);
+
+var newArray = array.slice(2, 4);
+console.log(newArray);
 console.log(array);
