@@ -1,28 +1,23 @@
-var array = [1, 2, 3,,];
+var array = [1, 2, 3, 4];
 
-array.push(4);
-console.log(array);
+array.unshift('new');
+array[array.indexOf('new')] = 'old';
+console.log(array.filter(function(value){
+    return value > 2;
+}));
 
 var array = [1, 2, 3, 4];
 
-array.pop();
-console.log((array.pop));
-console.log(array);
-
-var array = [1, 2, 3, 4];
-
-array.shift();
+array.unshift('new');
+array[array.indexOf('new')] = 'old';
+console.log(array.map(function(value){
+    return value * 2;
+}));
 console.log(array);
 
 var array = [1, 2, 3, 4];
 
 array.unshift('new');
-console.log(array.indexOf('new'));
-
-var newArray = array.splice(2, 2);
-console.log(newArray);
-console.log(array);
-
-var newArray = array.slice(2, 4);
-console.log(newArray);
+array[array.indexOf('new')] = 'old';
+console.log(array.reverse());
 console.log(array);
