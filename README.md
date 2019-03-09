@@ -11,3 +11,4 @@ Finished 'Types and Scopes' section.
 
 Started 'Arrays' section.
 
+Finished 'Arrays' section.
