@@ -1,11 +1,9 @@
-var array = ['old', 1, 2, 3, 4];
-var newArray = ['join', 'me'];
+var array = [1, 2, 3, 4];
 
-console.log(array.concat(newArray));
+console.log(array.reduce(function(total, value) {
+    console.log('Total: ' + total + ', Value: ' + value);
+    return total + value;
+}));
 console.log(array);
 
-var array = ['old', 1, 2, 3, 4];
-var newArray = ['join', 'me'];
 
-console.log(array.join(''));
-console.log(array);
