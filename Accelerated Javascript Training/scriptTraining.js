@@ -1,9 +1,29 @@
-var array = [1, 2, 3, 4];
+var person = {
+    "first-name": 'Matie',
+    age: 33,
+    details: {
+        hobbies: ["Sports", "Cooking"],
+        location: 'Poland'
+    },
+    greet: function() {
+        console.group('Hello!');
+    }
+};
+person.greet();
+console.log(person.details.hobbies);
+console.log(typeof person);
+console.log(typeof person.name);
 
-console.log(array.reduce(function(total, value) {
-    console.log('Total: ' + total + ', Value: ' + value);
-    return total + value;
-}));
-console.log(array);
+var person = {
+    name: 'Matie',
+    age: 33,
+    details: {
+        hobbies: ["Sports", "Cooking"],
+        location: 'Poland'
+    },
+    greet: function() {
+        console.group('Hello!');
+    }
+};
 
-
+console.log(typeof person['first-name']);
