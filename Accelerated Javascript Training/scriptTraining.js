@@ -1,12 +1,10 @@
 var person = {
-    "first-name": 'Matie',
+    name:'Matie',
     age: 33,
-    details: {
-        hobbies: ["Sports", "Cooking"],
-        location: 'Poland'
-    },
-    greet: function() {
-        console.group('Hello!, I am ' + this.age + ' years old');
-    }
 };
-person.greet();
+
+var anotherPerson = new Object();
+anotherPerson.name = 'Tiger';
+anotherPerson.age = 32;
+
+console.log(anotherPerson);
