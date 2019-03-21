@@ -4,10 +4,10 @@ var person = {
 };
 
 Object.prototype.greet = function(){
-    console.log('Hello there!');
+    console.log('Hello there, I am ' + this.name + '!');
 };
 
 person.greet();
-
-console.log(person.__proto__);
-console.log(person.toString());
+var max = Object.create(person);
+console.log(max.name);
+max.greet();
