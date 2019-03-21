@@ -9,5 +9,6 @@ Object.prototype.greet = function(){
 
 person.greet();
 var max = Object.create(person);
-console.log(max.name);
-max.greet();
+var anna = Object.create(person);
+console.log(anna.__proto__.__proto__ == Object.prototype);
+console.log(Object.getPrototypeOf(anna) == person);
