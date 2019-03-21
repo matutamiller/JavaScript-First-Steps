@@ -3,8 +3,11 @@ var person = {
     age: 33,
 };
 
+Object.prototype.greet = function(){
+    console.log('Hello there!');
+};
 
-var anotherPerson = Object.create(person);
-anotherPerson.name = 'Tiger';
+person.greet();
 
-console.log(anotherPerson.age);
+console.log(person.__proto__);
+console.log(person.toString());
