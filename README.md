@@ -13,4 +13,4 @@ Started 'Arrays' section.
 
 Finished 'Arrays' section.
 
-Started 'Objects' section. Prototypes.
+Started 'Objects' section. Prototypes. Constructor functions.
