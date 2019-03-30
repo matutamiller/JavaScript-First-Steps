@@ -1,13 +1,7 @@
-function Person() {
-    this.name = 'Matie';
-    this.greet = function(){
-        console.log('Hello, I am ' + this.name);
-    }
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
 }
 
-var person = new Person();
-person.name = "Matie";
-
-console.log(person.name);
-
-person.greet();
+var Person = new Person('Matie', 33);
+console.log(person);
