@@ -5,3 +5,5 @@ function Person(name, age) {
 
 var Person = new Person();
 console.log(person);
+
+var person = Object.create(null);
