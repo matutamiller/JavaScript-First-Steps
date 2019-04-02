@@ -3,5 +3,5 @@ function Person(name, age) {
     this.age = age;
 }
 
-var Person = new Person('Matie', 33);
+var Person = new Person();
 console.log(person);
