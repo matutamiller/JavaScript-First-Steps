@@ -1,9 +1,11 @@
-function Person(name, age) {
-    this.name = name;
-    this.age = age;
+function fn() {
+    console.log(this);
 }
 
-var Person = new Person();
-console.log(person);
+var obj = {
+    obfn: fn
+};
 
-var person = Object.create(null);
+obj.obfn();
+
+obj.obfn.bind(this)();
