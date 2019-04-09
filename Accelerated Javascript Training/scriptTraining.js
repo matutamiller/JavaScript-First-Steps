@@ -14,7 +14,9 @@ Object.defineProperty(account, 'name',{
         this._name;
     },
     set: function(name) {
-        this._name = name;
+        if (name == 'Matie'){
+            this._name = name;
+        } 
     }
 });
 
