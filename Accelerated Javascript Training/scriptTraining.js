@@ -1,5 +1,6 @@
 var account = {
     cash: 12000,
+    _name: 'Default',
     withdraw: function(amount) {
         this.cash -=amount;
         console.log('withdrew ' + amount + ', new cash reserve is: ' + this.cash);
@@ -9,8 +10,12 @@ var account = {
 
 
 Object.defineProperty(account, 'name',{
-    value: 'ID000-1',
-    writable: true
+    get: function() {
+        this._name;
+    },
+    set: function(name) {
+        this._name = name;
+    }
 });
 
 console.log(account.name);
