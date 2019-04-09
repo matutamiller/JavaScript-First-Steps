@@ -6,7 +6,13 @@ var account = {
     }
 };
 
+
+
+Object.defineProperty(account, 'deposit',{
+    value: function(amount){
+        this.cash += amount;
+    }
+});
+
+account.deposit(3000);
 account.withdraw(1000);
-
-
-
