@@ -1,15 +1,12 @@
-function fn(message) {
-    console.log(message + this);
-}
-
-var obj = {
-    obfn: fn
+var account = {
+    cash: 12000,
+    withdraw: function(amount) {
+        this.cash -=amount;
+        console.log('withdrew ' + amount + ', new cash reserve is: ' + this.cash);
+    }
 };
-var person = {
-    name: 'Max'
-}
 
-obj.obfn.bind(person, 'Hello')();
-obj.obfn.call(person, 'Hello');
-obj.obfn.apply(person, ['Hello']);
+account.withdraw(1000);
+
+
 
