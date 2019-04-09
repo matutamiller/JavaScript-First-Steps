@@ -8,11 +8,13 @@ var account = {
 
 
 
-Object.defineProperty(account, 'deposit',{
-    value: function(amount){
-        this.cash += amount;
-    }
+Object.defineProperty(account, 'name',{
+    value: 'ID000-1',
+    writable: true
 });
 
-account.deposit(3000);
-account.withdraw(1000);
+console.log(account.name);
+
+account.name = 'ID000-3';
+
+console.log(account.name);
