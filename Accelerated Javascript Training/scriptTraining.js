@@ -7,5 +7,5 @@ var person = {
 };
 
 for (var field in person) {
-    console.log(field);
+    console.log(person[field]);
 }
