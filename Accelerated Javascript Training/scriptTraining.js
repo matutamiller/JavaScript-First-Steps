@@ -1,10 +1,21 @@
-function generator(input) {
-    var number = input;
-    return function() {
-        return number * 2;
-    };
-}
+(function calc() {
+    console.log('Calc');
+})();
 
-var calc = generator(900);
-var calcAnother = generator(1000);
-console.log(calc());
+(function calc() {
+    var number = 7;
+    console.log(number);
+})();
+
+console.log(number);
+
+(function calc(input) {
+    var number = input;
+    console.log(number);
+})(10);
+
+var obj = {};
+(function calc(input) {
+    obj.name = 'Matie';
+})(obj);
+console.log(obj);
