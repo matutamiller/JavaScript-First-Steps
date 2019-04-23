@@ -18,5 +18,4 @@ console.log(msg.length);
 var msg = function(message) {
     console.log(message);
 }
-
 console.log(msg.name);
