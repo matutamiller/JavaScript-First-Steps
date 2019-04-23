@@ -19,4 +19,4 @@ Finished 'Objects' section.
 
 Proceeded to "Errors and Debugging" section.
 
-Moved to "Functions" block.
+Moved to advanced "Functions" block.
