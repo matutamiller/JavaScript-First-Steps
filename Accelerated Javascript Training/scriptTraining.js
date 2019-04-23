@@ -1,21 +1,22 @@
-(function calc() {
-    console.log('Calc');
-})();
+function message(message){
+    console.log(message);
+    console.log(arguments);
+}
 
-(function calc() {
-    var number = 7;
-    console.log(number);
-})();
+message('Hi!', 10);
 
-console.log(number);
+function message(message){
+    console.log(message);
+    console.log(arguments.length);
+}
 
-(function calc(input) {
-    var number = input;
-    console.log(number);
-})(10);
+message('Hi!', 10);
+var msg = message;
+console.log(msg.name);
+console.log(msg.length);
 
-var obj = {};
-(function calc(input) {
-    obj.name = 'Matie';
-})(obj);
-console.log(obj);
+var msg = function(message) {
+    console.log(message);
+}
+
+console.log(msg.name);
