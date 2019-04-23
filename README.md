@@ -18,3 +18,5 @@ Started 'Objects' section. Prototypes. Constructor functions.
 Finished 'Objects' section.
 
 Proceeded to "Errors and Debugging" section.
+
+Moved to "Functions" block.
