@@ -20,3 +20,5 @@ Finished 'Objects' section.
 Proceeded to "Errors and Debugging" section.
 
 Moved to advanced "Functions" block. Finished this block.
+
+Sterted 'Built-in Objects & Functions' section.
