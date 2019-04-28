@@ -1,3 +1,3 @@
-setTimeout(function(){
-    console.log('Finished!');
-}, 2000);
+setInterval(function(){
+    console.log('Ping!');
+}, 500);
