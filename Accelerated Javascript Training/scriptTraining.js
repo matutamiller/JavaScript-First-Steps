@@ -1,5 +1,15 @@
-var a = 10;
-console.log(a.toString());
+var string = 'Any text';
 
-var b = 10.3;
-console.log(a.toFixed());
+console.log(string[2]);
+
+var string = 'Any text';
+console.log(string.concat(' add a new string'));
+
+var string = 'Any text';
+console.log(string.toUpperCase());
+
+var string = 'Any text';
+console.log(string.split(' '));
+
+var string = 'Any text';
+console.log(string.trim());
