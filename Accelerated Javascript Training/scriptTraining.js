@@ -1,7 +1,8 @@
-var interval = setInterval(function(){
-    console.log('Ping!');
-}, 500);
+var a = '5';
+console.log(parseInt(a));
 
-setTimeout(function(){
-    clearInterval(interval);
-}, 2500);
+var b = 'test';
+console.log(parseInt(b));
+
+var c = 'FBB123';
+console.log(parseInt(c, 16));
