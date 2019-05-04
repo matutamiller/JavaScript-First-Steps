@@ -1,8 +1,5 @@
-var a = '5';
-console.log(parseInt(a));
+var a = 10;
+console.log(a.toString());
 
-var b = 'test';
-console.log(parseInt(b));
-
-var c = 'FBB123';
-console.log(parseInt(c, 16));
+var b = 10.3;
+console.log(a.toFixed());
