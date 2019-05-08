@@ -1,5 +1,6 @@
-var a = 1.99;
-console.log(Math.floor(a));
+console.log(Math.max(1, 100, 1000));
+console.log(Math.min(1, 100, 1000));
+console.log(Math.random());
 
-var a = 2;
-console.log(Math.exp(a));
+var rnd = Math.floor(Math.random() * 100) + 1;
+console.log(rnd);
