@@ -1,8 +1,5 @@
-var a = -3;
-console.log(Math.abs(a));
+var a = 1.99;
+console.log(Math.floor(a));
 
-var a = 1.27;
-console.log(Math.round(a));
-
-var a = 1.27;
-console.log(Math.ceil(a));
+var a = 2;
+console.log(Math.exp(a));
