@@ -1,5 +1,8 @@
-var pi = Math.PI;
-console.log(pi);
+var a = -3;
+console.log(Math.abs(a));
 
-var e = Math.E;
-console.log(pi);
+var a = 1.27;
+console.log(Math.round(a));
+
+var a = 1.27;
+console.log(Math.ceil(a));
