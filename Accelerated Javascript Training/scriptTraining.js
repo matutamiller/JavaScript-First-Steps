@@ -1,3 +1,3 @@
-var string = "abc";
+var string = "abab";
 var pattern = /ab/;
-pattern.exec(string);
+console.log(pattern.test(string));
