@@ -1,3 +1,3 @@
-var today = new Date();
-console.log(today.getDate());
-console.log(today.getDay());
+var string = "abc";
+var pattern = /ab/;
+console.log(pattern);
