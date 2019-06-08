@@ -24,3 +24,5 @@ Moved to advanced "Functions" block. Finished this block.
 Sterted 'Built-in Objects & Functions' section. 
 
 Worked through the section.
+
+Proceeded to "Working with the DOM" section.
